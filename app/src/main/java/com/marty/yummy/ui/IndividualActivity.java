@@ -124,6 +124,9 @@ public class IndividualActivity extends AppCompatActivity implements View.OnClic
             case R.id.b_cart:
                 startActivity(new Intent(this,CartActivity.class));
                 break;
+            default: // default clause should be the last one
+                error();
+                break;
 
         }
     }
